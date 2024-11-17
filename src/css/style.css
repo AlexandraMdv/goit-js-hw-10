@@ -1,0 +1,89 @@
+.cat-info {
+    /* display: flex; */
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.cat-info h2 {
+    margin: 0;
+    font-family: "Seymour One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cat-info div {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.breed-select {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    background: #f2a3a5;
+    border-radius: 50%;
+    position: relative;
+    animation: roll 1s ease-in-out infinite alternate;
+    margin: 12px 100px;
+}
+  
+.loader:after{
+    content:"";
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    border: 5px solid ;
+    border-color: #ff3d00 transparent;
+}
+
+  @keyframes roll {
+    0% {
+      transform: translateX(-150%) rotate(0deg) ;
+    }
+    100% {
+      transform:  translateX(150%) rotate(360deg);
+    }
+}
+
+/* // Main content enlargements */
+.breed-select.ss-main {
+  height: 50px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* // Target the class on the img */
+.breed-select.ss-main .ss-single .country {
+  width: 30px;
+  padding: 0 8px 0 8px;
+}
+
+/* // Target the options
+// Update sizing and alignment */
+.breed-select.ss-content .ss-option {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* // Target the class on the img */
+.breed-select.ss-content .ss-option .country {
+  width: 30px;
+  padding: 0 8px 0 8px;
+}
+
+.error {
+    display: none;
+}
+
+.breed-select {
+    display: none;
+}
